@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empanadas Deliciosas - Tu tienda online</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #e74c3c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 15px;
+        }
+        .product-title {
+            font-size: 18px;
+            margin: 0 0 10px;
+        }
+        .product-price {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .add-to-cart {
+            background: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            width: 100%;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .add-to-cart:hover {
+            background: #c0392b;
+        }
+        .cart-section {
+            background: white;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Empanadas Deliciosas</h1>
+        <p>Las mejores empanadas artesanales entregadas en tu hogar</p>
+    </header>
+
+    <div class="container">
+        <h2>Nuestras Especialidades</h2>
+        
+        <div class="product-grid">
+            <!-- Producto 1 -->
+            <div class="product-card">
+                <img src="https://resizer.glanacion.com/resizer/v2/a-la-hora-de-pensar-en-empanadas-de-carne-vale-la-64QJ4Q4NLZCERNGU22MPWDJMUI.png?auth=c0aa5a91ec3666c78a72b12e472f80e77f9defc516ab3049a0a9b5eec9bee2fc&width=1280&height=854&quality=70&smart=true" alt="Empanada de Carne" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Empanada de Carne</h3>
+                    <p>Carne picada, cebolla, huevo y especias</p>
+                    <p class="product-price">$1.50 c/u</p>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            
+            <!-- Producto 2 -->
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5yGEhnEV5D5Lg0Ow8Pdg1i_L_-e_KgMR5lQ&s      " alt="Empanada de Pollo" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Empanada de Pollo</h3>
+                    <p>Pollo desmenuzado, cebolla, pimiento y especias</p>
+                    <p class="product-price">$1.40 c/u</p>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            
+            <!-- Producto 3 -->
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO3Hpr0f-YzpFMJLNFmbR5eh-7YeH5Aj_pYA&s   " alt="Empanada de Queso" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Empanada de Queso</h3>
+                    <p>Queso mozzarella y cebolla caramelizada</p>
+                    <p class="product-price">$1.30 c/u</p>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            
+            <!-- Producto 4 -->
+            <div class="product-card">
+                <img src="https://imag.bonviveur.com/presentacion-detalle-de-la-empanada-de-jamon-y-queso.jpg" alt="Empanada de Jamón y Queso" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Jamón y Queso</h3>
+                    <p>Jamón cocido y queso mozzarella</p>
+                    <p class="product-price">$1.35 c/u</p>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+         
+        <div class="cart-section">
+           <center> <h2>Tu Pedido</h2>
+            <p>Aquí aparecerán las empanadas que selecciones</p>
+            <button style="background: #2ecc71; padding: 15px 25px; font-size: 18px;">Finalizar Compra</button></center>
+        </div>
+    </div>
+</body>
+</html>
+                
